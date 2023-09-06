@@ -5,7 +5,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi import FastAPI, Request
 from pymongo import MongoClient
 
-conn = MongoClient("mongodb+srv://omgupta2202:Jhy9EXpA4Zl57yuk@mongolearn.6ajoyeg.mongodb.net/")
+conn = MongoClient("Your_mongo_URI")
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
